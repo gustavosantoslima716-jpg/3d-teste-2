@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo — NØVA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="header-container"></div>
+
+  <main class="container section">
+    <div class="catalog-header">
+      <div>
+        <span class="tag">Haute Horlogerie</span>
+        <h1>Catálogo de Relógios</h1>
+      </div>
+      <div class="catalog-search-box">
+        <input type="text" id="search-input" placeholder="Pesquisar modelo..." aria-label="Pesquisar relógios">
+      </div>
+    </div>
+
+    <!-- Filtros com xl-behavior-filter -->
+    <div class="filters-bar" data-xantoss-behaviors='[{"id":"xl-behavior-filter","config":{"target":"products-grid"}}]'>
+      <div class="filter-group" id="collection-filters">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="Classic">Classic</button>
+        <button class="filter-btn" data-filter="Avant-Garde">Avant-Garde</button>
+        <button class="filter-btn" data-filter="Sport">Sport</button>
+      </div>
+      <div class="sort-group">
+        <select id="sort-select" aria-label="Ordenar produtos">
+          <option value="featured">Destaques</option>
+          <option value="price-asc">Menor Preço</option>
+          <option value="price-desc">Maior Preço</option>
+          <option value="name">Nome (A-Z)</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Grade de Produtos -->
+    <div class="products-grid" id="catalog-grid">
+      <!-- Injetado via JS -->
+    </div>
+
+    <div id="no-results" class="no-results hidden">
+      <p>Nenhum relógio encontrado com os critérios selecionados.</p>
+      <button class="btn btn-outline" id="reset-filters">Limpar Filtros</button>
+    </div>
+  </main>
+
+  <div id="footer-container"></div>
+  <div id="cart-drawer" class="cart-drawer"></div>
+
+  <script src="script.js"></script>
+
+<script src="assets/xantoss-library.js" defer></script>
+</body>
+</html>

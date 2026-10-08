@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato — NØVA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="header-container"></div>
+
+  <main class="container section">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <span class="tag">Atendimento Exclusivo</span>
+        <h1>Fale Conosco</h1>
+        <p>Nossos concierges estão à disposição para auxiliar em aquisições, encomendas personalizadas ou agendamento de visitas privadas aos nossos ateliers.</p>
+
+        <div class="contact-methods">
+          <div class="method">
+            <h4>Atendimento Telefônico</h4>
+            <p>+41 22 819 0000<br>Segunda a Sexta, 9h às 18h (GMT+1)</p>
+          </div>
+          <div class="method">
+            <h4>Concierge Digital</h4>
+            <p>concierge@nova-watches.ch</p>
+          </div>
+          <div class="method">
+            <h4>Atelier Principal</h4>
+            <p>Rue du Rhône 42, 1204 Genève, Suíça</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-card">
+        <form id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Nome Completo</label>
+            <input type="text" id="name" required placeholder="Seu nome">
+            <span class="error-msg" id="name-error"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" required placeholder="seu@email.com">
+            <span class="error-msg" id="email-error"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Assunto</label>
+            <select id="subject" required>
+              <option value="">Selecione o assunto</option>
+              <option value="aquartis">Aquisição de Relógio</option>
+              <option value="bespoke">Encomenda Personalizada (Bespoke)</option>
+              <option value="manutencao">Manutenção e Revisão</option>
+              <option value="outro">Outros Assuntos</option>
+            </select>
+            <span class="error-msg" id="subject-error"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Mensagem</label>
+            <textarea id="message" rows="5" required placeholder="Como podemos auxiliá-lo?"></textarea>
+            <span class="error-msg" id="message-error"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full">Enviar Mensagem</button>
+          <div id="form-success" class="form-success hidden">Mensagem enviada com sucesso! Nosso concierge entrará em contato em breve.</div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <div id="footer-container"></div>
+  <div id="cart-drawer" class="cart-drawer"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

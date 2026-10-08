@@ -1,0 +1,91 @@
+--- index.html ---
+<DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NØVA — The Art of Time</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="header-container"></div>
+
+  <main>
+    <!-- Hero com Xantoss Recipe Landing Hero -->
+    <section class="hero-section">
+      <div data-xantoss-library="xl-recipe-landing-hero" data-xantoss-config='{"title":"NØVA ECLIPSE","description":"A essência do tempo esculpida em ouro e obsidiana.","config":{"orbit":{"autoRotate":true,"drag":true},"background":"#080808"}}'>
+        <div class="hero-fallback">
+          <span class="hero-subtitle"> Haute Horlogerie</span>
+          <h1>The Art of Time</h1>
+          <p>Mecanismos suíços suíços de precisão absoluta combinados com design vanguardista.</p>
+          <div class="hero-actions">
+            <a href="catalogo.html" class="btn btn-primary">Explorar Coleção</a>
+            <a href="sobre.html" class="btn btn-outline">Nossa História</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Coleções em Destaque -->
+    <section class="container section">
+      <div class="section-header" data-xantoss-behaviors='[{"id":"xl-animation-reveal","config":{"threshold":0.2}}]'>
+        <span class="tag">Coleções Exclusivas</span>
+        <h2>Maestria em Cada Detalhe</h2>
+      </div>
+      <div class="collections-grid">
+        <a href="catalogo.html?colecao=classic" class="collection-card">
+          <div class="collection-bg" style="background: linear-gradient(135deg, #111 0%, #1a150e 100%);"></div>
+          <div class="collection-content">
+            <h3>Classic Complications</h3>
+            <p>Tradição atemporal para os puristas da relojoaria.</p>
+            <span class="link-arrow">Descobrir &rarr;</span>
+          </div>
+        </a>
+        <a href="catalogo.html?colecao=avant-garde" class="collection-card">
+          <div class="collection-bg" style="background: linear-gradient(135deg, #111 0%, #0d161a 100%);"></div>
+          <div class="collection-content">
+            <h3>Avant-Garde</h3>
+            <p>Materiais aeroespaciais e design futurista.</p>
+            <span class="link-arrow">Descobrir &rarr;</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Produtos em Destaque -->
+    <section class="container section">
+      <div class="section-header flex-between">
+        <div>
+          <span class="tag">Destaques</span>
+          <h2>Novos Lançamentos</h2>
+        </div>
+        <a href="catalogo.html" class="btn btn-outline">Ver Todos</a>
+      </div>
+      <div class="products-grid" id="featured-products">
+        <!-- Injetado via JS -->
+      </div>
+    </section>
+
+    <!-- Banner Experiência -->
+    <section class="experience-banner">
+      <div class="container experience-content">
+        <span class="tag gold">A Experiência NØVA</span>
+        <h2>Feito à Mão para Durar Gerações</h2>
+        <p>Cada relógio NØVA passa por mais de 500 horas de testes rigorosos em nossos ateliers em Genebra.</p>
+        <a href="sobre.html" class="btn btn-primary">Conheça Nosso Atelie</a>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-container"></div>
+  <div id="cart-drawer" class="cart-drawer"></div>
+
+  <script src="script.js"></script>
+
+<script src="assets/xantoss-library.js" defer></script>
+</body>
+</html>
